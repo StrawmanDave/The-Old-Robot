@@ -14,8 +14,7 @@ using System.Security.Cryptography.X509Certificates;
 Console.WriteLine("Enter 3 commands out of these 5 On, Off, North, South, West, East");
 Robot newRobot = new Robot();
 
-
-int commandCount = 3;
+//needs to be a forlop
 for(int i = 0; i<newRobot.Commands.Length; i++)
 {
     string? InputCommand = Console.ReadLine();  
