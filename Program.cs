@@ -12,31 +12,32 @@ using System.Security.Cryptography.X509Certificates;
 
 
 Console.WriteLine("Enter 3 commands out of these 5 On, Off, North, South, West, East");
-
 Robot newRobot = new Robot();
+
+
 int commandCount = 3;
-while(commandCount > 0)
+for(int i = 0; i<newRobot.Commands.Length; i++)
 {
-    string InputCommand = Console.ReadLine();  
+    string? InputCommand = Console.ReadLine();  
     switch(InputCommand)
     {
         case "On":
-        newRobot.Commands.Append(new OnCommand());
+        newRobot.Commands[i] =new OnCommand();
         break;
         case "Off":
-        newRobot.Commands.Append(new OffCommand());
+        newRobot.Commands[i] = new OffCommand();
         break;
         case "North":
-        newRobot.Commands.Append(new NorthCommand());
+        newRobot.Commands[i] = new NorthCommand();
         break;
         case "South":
-        newRobot.Commands.Append(new SouthCommand());
+        newRobot.Commands[i] = new SouthCommand();
         break;
         case "West":
-        newRobot.Commands.Append(new WestCommand());
+        newRobot.Commands[i] = new WestCommand();
         break;
         case "East":
-        newRobot.Commands.Append(new EastCommand());        
+        newRobot.Commands[i] = new EastCommand();        
         break;
     }
     commandCount --;
