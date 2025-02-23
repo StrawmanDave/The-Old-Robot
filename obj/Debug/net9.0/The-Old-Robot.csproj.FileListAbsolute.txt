@@ -1,0 +1,15 @@
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\bin\Debug\net9.0\The-Old-Robot.exe
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\bin\Debug\net9.0\The-Old-Robot.deps.json
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\bin\Debug\net9.0\The-Old-Robot.runtimeconfig.json
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\bin\Debug\net9.0\The-Old-Robot.dll
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\bin\Debug\net9.0\The-Old-Robot.pdb
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\obj\Debug\net9.0\The-Old-Robot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\obj\Debug\net9.0\The-Old-Robot.AssemblyInfoInputs.cache
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\obj\Debug\net9.0\The-Old-Robot.AssemblyInfo.cs
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\obj\Debug\net9.0\The-Old-Robot.csproj.CoreCompileInputs.cache
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\obj\Debug\net9.0\The-Old-Robot.sourcelink.json
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\obj\Debug\net9.0\The-Old-Robot.dll
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\obj\Debug\net9.0\refint\The-Old-Robot.dll
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\obj\Debug\net9.0\The-Old-Robot.pdb
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\obj\Debug\net9.0\The-Old-Robot.genruntimeconfig.cache
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\Programming-1410\The-Old-Robot\obj\Debug\net9.0\ref\The-Old-Robot.dll
