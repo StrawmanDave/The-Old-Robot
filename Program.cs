@@ -14,7 +14,7 @@ using System.Security.Cryptography.X509Certificates;
 Console.WriteLine("Enter 3 commands out of these 5 On, Off, North, South, West, East");
 Robot newRobot = new Robot();
 
-//needs to be a forlop
+//needs to be a forloop so you can set the index of the array Commands will not work if you try to append the items.
 for(int i = 0; i<newRobot.Commands.Length; i++)
 {
     string? InputCommand = Console.ReadLine();  
@@ -39,7 +39,6 @@ for(int i = 0; i<newRobot.Commands.Length; i++)
         newRobot.Commands[i] = new EastCommand();        
         break;
     }
-    commandCount --;
 }
 newRobot.Run();
 
