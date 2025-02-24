@@ -14,7 +14,7 @@ using System.Security.Cryptography.X509Certificates;
 ///Robotic Interface
 ///Change your abstract RobotCommand class into an IRobotCommand interface.
 ///Remove the unnecessary public and abstract keywords from the Run mehtod.
-///Change the Robot class to use IrobotCommand instead of RobotCommand
+///Change the Robot class to use IRobotCommand instead of RobotCommand
 ///Make all of your commmands implement this new interface instead of extending the RobotCommand class that no longer exists.
 ///You will also want to remove the override keywords in these classes.
 ///Ensure your program still compils and runs
