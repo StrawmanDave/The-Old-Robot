@@ -11,6 +11,18 @@ using System.Security.Cryptography.X509Certificates;
 ///After filling the robot's command set with these new RobotCommand objects, use the robot's Run method to execute them.
 
 
+///Robotic Interface
+///Change your abstract RobotCommand class into an IRobotCommand interface.
+///Remove the unnecessary public and abstract keywords from the Run mehtod.
+///Change the Robot class to use IrobotCommand instead of RobotCommand
+///Make all of your commmands implement this new interface instead of extending the RobotCommand class that no longer exists.
+///You will also want to remove the override keywords in these classes.
+///Ensure your program still compils and runs
+///Awnser the question Do you feel this is an improvement over using an abstract base class? Why or why not?
+///This seems way easier to use if you are familair even a little bit when it comes overriding/ using the implemented interface. It is definetly a improvement.
+
+
+
 Console.WriteLine("Enter 3 commands out of these 5 On, Off, North, South, West, East");
 Robot newRobot = new Robot();
 
@@ -47,11 +59,11 @@ public class Robot
     public int X {get; set;}
     public int Y {get; set;}
     public bool IsPowered {get; set;}
-    public RobotCommand?[] Commands {get;} = new RobotCommand?[3];
-
+    public IRobotCommand?[] Commands {get;} = new IRobotCommand?[3];
+    
     public void Run()
     {
-        foreach (RobotCommand? command in Commands)
+        foreach (IRobotCommand? command in Commands)
         {
             command?.Run(this);
             Console.WriteLine($"[{X} {Y} {IsPowered}]");
@@ -59,31 +71,30 @@ public class Robot
     }
 }
 
-public abstract class RobotCommand
+public interface IRobotCommand
 {
-
-    public abstract void Run(Robot robot);
+    public void Run(Robot robot);
 }
 
-public class OnCommand : RobotCommand
+public class OnCommand : IRobotCommand
 {
-    public override void Run(Robot robot)
+    public void Run(Robot robot)
     {
         robot.IsPowered = true;
     }
 }
 
-public class OffCommand : RobotCommand
+public class OffCommand : IRobotCommand
 {
-    public override void Run(Robot robot)
+    public void Run(Robot robot)
     {
         robot.IsPowered = false;
     }
 }
 
-public class NorthCommand : RobotCommand
+public class NorthCommand : IRobotCommand
 {
-    public override void Run(Robot robot)
+    public  void Run(Robot robot)
     {
         if(robot.IsPowered == true)
         {
@@ -95,9 +106,9 @@ public class NorthCommand : RobotCommand
     }
 }
 
-public class SouthCommand : RobotCommand
+public class SouthCommand : IRobotCommand
 {
-    public override void Run(Robot robot)
+    public void Run(Robot robot)
     {
         if(robot.IsPowered == true)
         {
@@ -109,9 +120,9 @@ public class SouthCommand : RobotCommand
     }
 }
 
-public class WestCommand : RobotCommand
+public class WestCommand : IRobotCommand
 {
-    public override void Run(Robot robot)
+    public void Run(Robot robot)
     {
         if(robot.IsPowered == true)
         {
@@ -123,9 +134,9 @@ public class WestCommand : RobotCommand
     }
 }
 
-public class EastCommand : RobotCommand
+public class EastCommand : IRobotCommand
 {
-    public override void Run(Robot robot)
+    public void Run(Robot robot)
     {
         if(robot.IsPowered == true)
         {
